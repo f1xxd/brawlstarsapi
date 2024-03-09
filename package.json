@@ -1,5 +1,5 @@
 {
-  "name": "brawlapi",
+  "name": "brawlapi.com",
   "version": "1.0.0",
   "description": "BrawlApi.com API wrapper",
   "main": "dist/index.js",
