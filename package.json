@@ -1,9 +1,10 @@
 {
   "name": "brawlapi.com",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BrawlApi.com API wrapper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "author": "flxxd <me@flxxd.ru>",
   "keywords": [
     "brawlstars",
     "brawl stars",
@@ -17,17 +18,24 @@
     "format": "bunx biome format ./src --write",
     "prepublish": "tsc"
   },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/f1xxd/brawlapi.com.git"
+  },
+  "bugs": "https://github.com/f1xxd/brawlapi.com/issues",
+  "homepage": "https://github.com/f1xxd/brawlapi.com#readme",
   "devDependencies": {
-    "@biomejs/biome": "1.6.0",
     "@types/bun": "latest",
+    "@biomejs/biome": "1.6.0",
     "@types/debug": "^4.1.12",
     "debug": "^4.3.4",
-    "husky": "^9.0.11"
+    "husky": "^9.0.11",
+    "undici": "^6.7.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "undici": "^6.7.1"
   }
 }
