@@ -25,7 +25,7 @@ export interface IBrawler {
   description: string
   descriptionHtml: string
   starPowers: IBrawlerStarPower[]
-  gadget: IBrawlerGadget[]
+  gadgets: IBrawlerGadgets[]
   videos: unknown[]
 }
 
@@ -51,7 +51,7 @@ export interface IBrawlerStarPower {
   released: boolean
 }
 
-export interface IBrawlerGadget {
+export interface IBrawlerGadgets {
   id: number
   name: string
   path: string
