@@ -1,5 +1,5 @@
-import type { BrawlApi } from "client"
-import type { IGamemodeResponse, IGamemodesResponse, IGamemode } from "schemas"
+import type { BrawlApi } from "../client"
+import type { IGamemodeResponse, IGamemodesResponse, IGamemode } from "../schemas"
 
 export interface IGetGamemodeParams {
   id: number
@@ -13,7 +13,7 @@ export class Gamemodes {
 
   public async getGamemodes(): Promise<IGamemodesResult> {
     const response = await this.client.call<IGamemodesResponse>({
-      path: "/gamemodes",
+      path: "/v1/gamemodes",
     })
 
     return response.list
@@ -21,7 +21,7 @@ export class Gamemodes {
 
   public async getGamemode(params: IGetGamemodeParams): Promise<IGamemodeResult> {
     const response = await this.client.call<IGamemodeResponse>({
-      path: `/gamemodes/${params.id}`,
+      path: `/v1/gamemodes/${params.id}`,
     })
 
     return response

@@ -1,5 +1,5 @@
-import type { BrawlApi } from "client"
-import type { IEventsResponse } from "schemas"
+import type { BrawlApi } from "../client"
+import type { IEventsResponse } from "../schemas"
 
 export interface IEventsResult extends IEventsResponse {}
 
@@ -8,7 +8,7 @@ export class Events {
 
   public async getEvents(): Promise<IEventsResult> {
     const response = await this.client.call<IEventsResponse>({
-      path: "/events",
+      path: "/v1/events",
     })
 
     return response

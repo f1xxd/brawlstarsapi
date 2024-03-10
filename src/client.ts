@@ -1,10 +1,10 @@
 import createDebug from "debug"
 import { fetch } from "undici"
 
-import { Brawlers, Events, Gamemodes, Icons, Maps } from "api"
+import { Brawlers, Events, Gamemodes, Icons, Maps } from "./api"
 
-import type { IRequestOptions } from "types"
-import type { IResponse } from "schemas"
+import type { IRequestOptions } from "./types"
+import type { IResponse } from "./schemas"
 
 const debug = createDebug("brawlapi")
 
@@ -72,7 +72,7 @@ export class BrawlApi {
   public async call<T extends IResponse>(options: IRequestOptions): Promise<T> {
     debug("preparing request to %s: %o", options.path, options)
 
-    const endpoint = new URL(options.path, "https://api.brawlapi.com/v1")
+    const endpoint = new URL(options.path, "https://api.brawlapi.com")
 
     const headers: Record<string, string> = {
       "User-Agent": this.userAgent,

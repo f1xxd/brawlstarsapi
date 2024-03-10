@@ -1,6 +1,6 @@
 {
   "name": "brawlapi.com",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "BrawlApi.com API wrapper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -27,11 +27,13 @@
   },
   "bugs": "https://github.com/f1xxd/brawlapi.com/issues",
   "homepage": "https://github.com/f1xxd/brawlapi.com#readme",
+  "dependencies": {
+    "@types/debug": "^4.1.12",
+    "debug": "^4.3.4"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "@biomejs/biome": "1.6.0",
-    "@types/debug": "^4.1.12",
-    "debug": "^4.3.4",
     "husky": "^9.0.11",
     "undici": "^6.7.1"
   },
