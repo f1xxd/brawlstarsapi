@@ -1,4 +1,4 @@
-import { IResponse } from "./response"
+import type { IResponse } from "./response"
 
 export interface IIconsResponse extends IResponse {
   player: Record<string, IIconsPlayer>

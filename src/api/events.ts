@@ -1,5 +1,5 @@
-import { BrawlApi } from "client"
-import { IEventsResponse } from "schemas"
+import type { BrawlApi } from "client"
+import type { IEventsResponse } from "schemas"
 
 export interface IEventsResult extends IEventsResponse {}
 

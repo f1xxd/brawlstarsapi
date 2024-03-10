@@ -1,5 +1,5 @@
-import { BrawlApi } from "client"
-import { IBrawlerResponse, IBrawlersResponse, IBrawler } from "schemas"
+import type { BrawlApi } from "client"
+import type { IBrawlerResponse, IBrawlersResponse, IBrawler } from "schemas"
 
 export interface IGetBrawlerParams {
   id: number

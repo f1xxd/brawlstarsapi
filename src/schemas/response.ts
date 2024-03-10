@@ -4,5 +4,5 @@ export enum ResponseCode {
   Forbidden = 403,
 }
 
-// biome-ignore lint/complexity/noBannedTypes: <explanation>
+// biome-ignore lint/suspicious/noEmptyInterface: <explanation>
 export interface IResponse {}

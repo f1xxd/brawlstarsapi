@@ -1,5 +1,5 @@
-import { BrawlApi } from "client"
-import { IMapResponse, IMapsResponse, IMap } from "schemas"
+import type { BrawlApi } from "client"
+import type { IMapResponse, IMapsResponse, IMap } from "schemas"
 
 export interface IGetMapParams {
   id: number

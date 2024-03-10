@@ -1,5 +1,5 @@
-import { BrawlApi } from "client"
-import { IIconsResponse } from "schemas"
+import type { BrawlApi } from "client"
+import type { IIconsResponse } from "schemas"
 
 export interface IIconsResult extends IIconsResponse {}
 

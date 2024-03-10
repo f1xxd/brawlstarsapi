@@ -1,8 +1,10 @@
 import createDebug from "debug"
 import { fetch } from "undici"
 
-import { IRequestOptions } from "types"
-import { IResponse } from "schemas"
+import { Brawlers, Events, Gamemodes, Icons, Maps } from "api"
+
+import type { IRequestOptions } from "types"
+import type { IResponse } from "schemas"
 
 const debug = createDebug("brawlapi")
 
@@ -18,7 +20,37 @@ export interface IBrawlApiOptions {
 
 export class BrawlApi {
   /** User-Agent */
-  public userAgent: string
+  private readonly userAgent: string
+
+  /** Brawlers API
+   * 
+   * @example https://brawlapi.com/#/endpoints/brawlers
+  */
+  public readonly brawlers = new Brawlers(this)
+
+  /** Events API
+   * 
+   * @example https://brawlapi.com/#/endpoints/events
+  */
+  public readonly events = new Events(this)
+
+  /** Gamemodes API
+   * 
+   * @example https://brawlapi.com/#/endpoints/gamemodes
+  */
+  public readonly gamemodes = new Gamemodes(this)
+
+  /** Icons API
+   * 
+   * @example https://brawlapi.com/#/endpoints/icons
+  */
+  public readonly icons = new Icons(this)
+
+  /** Maps API
+   * 
+   * @example https://brawlapi.com/#/endpoints/maps
+  */
+  public readonly maps = new Maps(this)
 
   /**
    * Creates instance of BrawlApi with the provided options
