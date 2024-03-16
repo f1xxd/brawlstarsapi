@@ -1,6 +1,6 @@
 {
   "name": "brawlapi.com",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "BrawlApi.com API wrapper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/bun": "latest",
-    "@biomejs/biome": "1.6.0",
+    "@biomejs/biome": "1.6.1",
     "husky": "^9.0.11",
     "undici": "^6.7.1"
   },
