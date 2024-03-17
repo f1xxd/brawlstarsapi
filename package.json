@@ -1,7 +1,7 @@
 {
-  "name": "brawlapi.com",
-  "version": "1.0.5",
-  "description": "BrawlApi.com API wrapper",
+  "name": "brawlstarsapi",
+  "version": "2.0.0",
+  "description": "BrawlStars & BrawlApi.com API wrapper",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "flxxd <me@flxxd.ru>",
@@ -13,7 +13,6 @@
     "stars"
   ],
   "scripts": {
-    "prepare": "husky",
     "lint": "bunx biome lint ./src --apply",
     "format": "bunx biome format ./src --write",
     "prepublish": "tsc"
@@ -23,18 +22,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/f1xxd/brawlapi.com.git"
+    "url": "git+https://github.com/f1xxd/brawlstarsapi.git"
   },
-  "bugs": "https://github.com/f1xxd/brawlapi.com/issues",
-  "homepage": "https://github.com/f1xxd/brawlapi.com#readme",
+  "bugs": "https://github.com/f1xxd/brawlstarsapi/issues",
+  "homepage": "https://github.com/f1xxd/brawlstarsapi#readme",
   "dependencies": {
     "@types/debug": "^4.1.12",
-    "debug": "^4.3.4"
+    "debug": "^4.3.4",
+    "inspectable": "^3.0.0"
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "@biomejs/biome": "1.6.1",
-    "husky": "^9.0.11",
+    "@types/bun": "latest",
+    "swagger-typescript-api": "^13.0.3",
     "undici": "^6.7.1"
   },
   "peerDependencies": {

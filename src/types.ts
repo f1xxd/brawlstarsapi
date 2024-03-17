@@ -1,4 +1,7 @@
 export interface IRequestOptions {
-  /** Requested URL */
+  /** API URL */
+  url: string
+  
+  /** Requested path */
   path: string
 }

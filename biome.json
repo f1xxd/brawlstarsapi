@@ -1,5 +1,5 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.6.0/schema.json",
+	"$schema": "https://biomejs.dev/schemas/1.6.1/schema.json",
 	"organizeImports": {
 		"enabled": true
 	},
@@ -20,5 +20,8 @@
 		"enabled": true,
 		"indentStyle": "space",
 		"indentWidth": 2
-	}
+	},
+	"files": {
+    "ignore": ["src/schemas/generated.ts"]
+  }
 }

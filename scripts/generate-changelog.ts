@@ -1,4 +1,4 @@
-// Thanks for this script to https://github.com/gramiojs/gramio (and https://github.com/kravetsone)
+// thanks for this script to https://github.com/gramiojs/gramio
 
 import { execSync } from "node:child_process"
 import { randomUUID } from "node:crypto"

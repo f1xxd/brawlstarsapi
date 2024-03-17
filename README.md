@@ -1,21 +1,21 @@
-## brawlapi.com
+## brawlstarsapi
 
-BrawlApi.com API wrapper, written on TypeScript
+BrawlStars & BrawlApi.com API wrapper, written on TypeScript
 
 ### Installation
 #### NPM
 ```bash
-npm i brawlapi.com
+npm i brawlstarsapi
 ```
 
 #### PNPM
 ```bash
-pnpm add brawlapi.com
+pnpm add brawlstarsapi
 ```
 
 #### BUN
 ```bash
-bun add brawlapi.com
+bun add brawlstarsapi
 ```
 
-### Powered by [bun](https://bun.sh), thanks to [brawlify](https://brawlify.com) for its amazing [brawlapi](https://brawlapi.com)
+### thanks to [brawlify](https://brawlify.com) for its amazing [brawlapi](https://brawlapi.com)

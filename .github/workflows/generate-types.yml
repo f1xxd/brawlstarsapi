@@ -1,0 +1,31 @@
+name: Generate types from Swagger
+
+on: workflow_dispatch
+
+permissions:
+  contents: write
+
+jobs:
+  brawlstarsapi:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v1
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Generate types
+        run: bun scripts/generate-types.ts
+        env:
+          JWT_TOKEN: ${{ secrets.JWT_TOKEN }}
+
+      - name: Commit and Push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+            message: "generate types"

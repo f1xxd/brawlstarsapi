@@ -6,3 +6,4 @@ src
 biome.json
 bun.lockb
 tsconfig.*
+swagger.yml
